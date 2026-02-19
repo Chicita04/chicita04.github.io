@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fernandes Inês — Portfolio</title>
+
+  <meta name="description" content="Portfolio de Fernandes Inês — projets Python, Java, C/C++, HTML/CSS et web.">
+  <meta property="og:title" content="Portfolio — Fernandes Inês">
+  <meta property="og:description" content="Projets Python, Java, web, scripts et apps.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#22c55e">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Navigation principale">
+
+    <!-- Logo -->
+    <a class="logo" href="#top" aria-label="Retour en haut">FI</a>
+
+    <!-- Bouton thème -->
+    <button id="theme-toggle" aria-label="Basculer thème">🌙</button>
+
+    <!-- Bouton burger -->
+    <button id="menu-toggle"
+            class="burger"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Ouvrir le menu">
+      ☰
+    </button>
+
+    <!-- Menu UNIQUE (le deuxième était un doublon) -->
+    <ul id="main-menu" class="nav-links" role="menubar">
+      <li role="none"><a role="menuitem" href="#about">À propos</a></li>
+      <li role="none"><a role="menuitem" href="#skills">Compétences</a></li>
+      <li role="none"><a role="menuitem" href="#projects">Projets</a></li>
+      <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Overlay -->
+    <div id="nav-overlay" class="nav-overlay" hidden></div>
+
+  </nav>
+
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <h1 id="typed" class="title" aria-live="polite"></h1>
+      <p class="subtitle">
+        Étudiante en systèmes industriels, j’apprends le Java et le Python et je m’intéresse à d’autres langages.
+      </p>
+      <div class="cta">
+        <a href="#projects" class="btn primary">Voir mes projets</a>
+        <a href="#contact" class="btn">Me contacter</a>
+      </div>
+    </div>
+
+    <!-- Ajoute ta photo ici si tu veux -->
+    <!--
+    <div class="hero-photo">
+      <img src="assets/photo.jpg" alt="Portrait de Fernandes Inês">
+    </div>
+    -->
+  </section>
+</header>
+
+<main>
+
+  <section id="about" class="section fade">
+    <h2>À propos</h2>
+    <p>
+      Je suis une étudiante en systèmes industriels passionnée par la programmation et le développement de projets concrets.
+      Je connais les bases en C/C++ et j’apprends actuellement le Java et le Python.
+      J’aime explorer différents langages et technologies pour élargir mes compétences.
+    </p>
+  </section>
+
+  <section id="skills" class="section fade">
+    <h2>Compétences</h2>
+    <ul class="chip-list" aria-label="Compétences">
+      <li class="chip">Python</li>
+      <li class="chip">Java</li>
+      <li class="chip">HTML</li>
+      <li class="chip">CSS</li>
+      <li class="chip">C/C++</li>
+    </ul>
+
+    <div class="skills-bars" aria-hidden="true">
+      <div class="skill"><span>Python</span><div class="bar"><div class="fill" style="--level:80%"></div></div></div>
+      <div class="skill"><span>Java</span><div class="bar"><div class="fill" style="--level:65%"></div></div></div>
+      <div class="skill"><span>Web (HTML/CSS/JS)</span><div class="bar"><div class="fill" style="--level:70%"></div></div></div>
+      <div class="skill"><span>C/C++</span><div class="bar"><div class="fill" style="--level:60%"></div></div></div>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade">
+    <h2>Projets</h2>
+    <div id="project-list" class="grid" aria-live="polite"></div>
+  </section>
+
+  <section id="contact" class="section fade">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li><a href="mailto:chicita04@gmail.com">chicita04@gmail.com</a></li>
+      <li><a href="https://github.com/Chicita04" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/inês-f-a7ba44252/" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <small>© <span id="year"></span> Fernandes Inês</small>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
