@@ -94,16 +94,23 @@ body{
    Hero
 =================================== */
 
-.hero{
-  max-width:var(--container-max); margin:20px auto 0;
-  display:grid; grid-template-columns:1.2fr .8fr; gap:24px;
-  padding:24px 18px 0;
+/* Corrige la hauteur excessive du hero */
+.hero {
+  padding-top: 16px;
+  padding-bottom: 8px;
+  gap: 12px;
 }
 
-.hero-text .title{
-  font-size:clamp(26px, 5vw, 44px); margin:.2em 0;
+/* Réduit le titre */
+.hero-text .title {
+  font-size: clamp(26px, 4vw, 38px);
+  margin-bottom: 6px;
 }
 
+/* Ajoute une vraie séparation hero → contenu */
+.section {
+  margin-top: 32px;
+}
 .subtitle{ color:var(--muted); max-width:65ch; }
 
 .cta{ display:flex; gap:12px; margin-top:14px; flex-wrap:wrap; }
@@ -307,4 +314,5 @@ section[id] { scroll-margin-top: 84px; }
 .project:hover{
   border-color: var(--border); /* fallback */
   border-color: color-mix(in lab, var(--border), var(--accent) 20%);
+
 }
