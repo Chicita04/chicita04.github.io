@@ -1,2 +1,4 @@
 # chicita04.github.io
-testing a portofolio
+Portofolio test.
+Made in VS code, with AI help. 
+Next objective is to make it without the help of AI
